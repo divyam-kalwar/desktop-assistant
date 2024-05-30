@@ -38,6 +38,19 @@ def takecommand():
             print("Say that again please...")
             return "None"
         return query
-    
-text = takecommand()
-speak(text)
+
+
+if __name__ == "__main__":
+    query = takecommand().lower()
+
+    if 'wikipedia' in query:
+        speak('Searching wikipedia')
+        query = query.replace('wikipedia','')
+        results = wikipedia.summary(query, sentences =2)
+        speak('According to wikipedia')
+        print(results)
+        speak(results)
+
+    elif "youtube" in query:
+        speak('Opening Youtube')
+        webbrowser.open('youtube.com')
