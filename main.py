@@ -52,8 +52,9 @@ def wish_me():
     
 
 if __name__ == "__main__":
+    wish_me()
     while True:
-        wish_me()
+        st.title("Desktop Assistant System")
         
         query = takecommand().lower()
         browser_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
