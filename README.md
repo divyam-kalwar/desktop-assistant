@@ -5,7 +5,7 @@
 1. Create a new virtual envs.
 
 ```bash
-conda create -n assistant python == 3.8
+conda create -n assistant python == 3.10
 ```
 
 2. Activate the created envs.

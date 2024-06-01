@@ -6,3 +6,4 @@ streamlit
 pipwin
 gTTS
 google-generativeai
+python-dotenv
